@@ -46,14 +46,14 @@ namespace GradeBook.UserInterfaces
 
             if (type == "standard")
             {
-                StandardGradeBook gradebook = new StandardGradeBook(name);
+                StandardGradeBook gradebook = new StandardGradeBook(name, isWeighted);
 
                 Console.WriteLine("Created gradebook {0}.", name);
                 GradeBookUserInterface.CommandLoop(gradebook);
             }
             else if (type == "ranked")
             {
-                RankedGradeBook gradebook = new RankedGradeBook(name);
+                RankedGradeBook gradebook = new RankedGradeBook(name, isWeighted);
 
                 Console.WriteLine("Created gradebook {0}.", name);
                 GradeBookUserInterface.CommandLoop(gradebook);
