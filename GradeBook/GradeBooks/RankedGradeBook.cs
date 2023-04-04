@@ -37,15 +37,15 @@ namespace GradeBook.GradeBooks
             {
                 return 'A';
             }
-            else if ((higherGrades >= (int)(Students.Count * 0.2f)) && (higherGrades < top20 * 2))
+            else if ((higherGrades >= top20) && (higherGrades < top20 * 2))
             {
                 return 'B';
             }
-            else if ((higherGrades >= (int)(Students.Count * 0.4f)) && (higherGrades < top20 * 3))
+            else if ((higherGrades >= top20 * 2) && (higherGrades < top20 * 3))
             {
                 return 'C';
             }
-            else if ((higherGrades >= (int)(Students.Count * 0.6f)) && (higherGrades < top20 * 4))
+            else if ((higherGrades >= top20 * 3) && (higherGrades < top20 * 4))
             {
                 return 'D';
             }
